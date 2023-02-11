@@ -7,6 +7,8 @@ A project making to have a better understanding on using React app.
 This is just a simple dictionary app where users can search the word definitions according to its part of speech.
 <br> There are also extra features of audio and picture related to the word search.
 
+<https://dictionary-react-app-six.vercel.app/dictionary/>
+
 ## To Start
 
 ```
