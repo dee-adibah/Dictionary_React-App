@@ -13,9 +13,10 @@ function Dictionary() {
 	const [audio, setAudio] = useState("");
 	const [image, setImage] = useState([]);
 
-	const apiWord = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`;
+	const TOKEN = `${process.env.REACT_APP_UNSPLASH_API_KEY}`;
 
-	const apiImage = `https://api.unsplash.com/search/photos?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}&query=${searchWord}`;
+	const apiWord = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`;
+	const apiImage = `https://api.unsplash.com/search/photos?client_id=${TOKEN}&query=${searchWord}`;
 
 	const wordApiCall = async () => {
 		const res = await fetch(apiWord);
